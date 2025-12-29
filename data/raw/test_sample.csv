@@ -1,0 +1,6 @@
+"Timestamp,Source IP,Destination IP,Source Port,Destination Port,Protocol,Flow Duration,Total Fwd Packets,Total Backward Packets,Flow Bytes/s,Label"
+"2024-12-25 10:00:00,192.168.1.100,10.0.0.5,54321,22,TCP,1000,10,2,500,SSH-Patator"
+"2024-12-25 10:01:00,192.168.1.100,10.0.0.5,54322,22,TCP,1000,10,2,500,SSH-Patator"
+"2024-12-25 10:02:00,192.168.1.101,10.0.0.10,12345,80,TCP,500,5,1,1500,Web Attack – Sql Injection"
+"2024-12-25 10:03:00,10.0.1.50,10.0.0.1,50000,443,TCP,5000,10,10,1000,BENIGN"
+"2024-12-25 10:04:00,10.0.1.51,10.0.0.1,50001,443,TCP,5000,10,10,1000,BENIGN"

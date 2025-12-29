@@ -1,0 +1,64 @@
+{
+  "impact_detected": true,
+  "overall_severity": "Medium",
+  "total_affected_assets": 1,
+  "affected_asset_summary": [
+    {
+      "type": "unknown",
+      "name": "Unknown System",
+      "criticality": 5,
+      "targeted_ips": [
+        "unknown"
+      ]
+    }
+  ],
+  "compliance_violations": [],
+  "requires_notification": false,
+  "critical_actions_required": 0,
+  "total_estimated_loss_usd": 20000,
+  "individual_impacts": [
+    {
+      "attack_type": "Normal",
+      "severity": "Medium",
+      "affected_assets": [
+        {
+          "type": "unknown",
+          "name": "Unknown System",
+          "criticality": 5,
+          "targeted_ips": [
+            "unknown"
+          ]
+        }
+      ],
+      "downtime_hours": 2.0,
+      "estimated_loss_usd": 20000,
+      "data_risk": {
+        "confidentiality": "Low",
+        "integrity": "Low",
+        "availability": "Low",
+        "data_at_risk": "None",
+        "risk_level": "Low"
+      },
+      "compliance_risks": [],
+      "reputation_impact": {
+        "impact_score": 4,
+        "impact_level": "Low",
+        "public_visibility": "Low",
+        "customer_impact": "Indirect",
+        "media_risk": "Low"
+      },
+      "recovery_estimate": {
+        "immediate_containment_hours": 4,
+        "full_recovery_days": 1,
+        "phases": [
+          "Immediate containment and isolation",
+          "Threat eradication and system hardening",
+          "Service restoration and validation",
+          "Post-incident review and improvements"
+        ]
+      },
+      "business_impact_score": 3
+    }
+  ],
+  "analysis_timestamp": "2025-12-25T23:26:11.962612"
+}

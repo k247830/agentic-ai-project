@@ -1,0 +1,52 @@
+{
+  "evaluation_timestamp": "2025-12-26T01:47:39.472858",
+  "dataset": {
+    "total_events": 1000,
+    "malicious_events": 0,
+    "benign_events": 1000
+  },
+  "detection_performance": {
+    "accuracy": 1.0,
+    "precision": 0,
+    "recall": 0,
+    "f1_score": 0,
+    "false_positive_rate": 0.0,
+    "true_positives": 0,
+    "false_positives": 0,
+    "true_negatives": 1000,
+    "false_negatives": 0,
+    "total_detected": 0,
+    "total_actual": 0
+  },
+  "classification_performance": {
+    "classification_accuracy": 0,
+    "ground_truth_distribution": {},
+    "predicted_distribution": {},
+    "attack_types_detected": 0,
+    "attack_types_actual": 0
+  },
+  "confidence_analysis": {
+    "average_confidence": 0,
+    "confidence_distribution": {},
+    "high_confidence_predictions": 0
+  },
+  "system_performance": {
+    "processing_time_seconds": 0,
+    "total_events_processed": 0,
+    "events_per_second": 0,
+    "agents_executed": 0,
+    "analysis_complete": true
+  },
+  "overall_score": {
+    "score": 0.25,
+    "grade": "D",
+    "max_score": 1.0,
+    "percentage": 25.0
+  },
+  "recommendations": [
+    "Low precision (0.00%): Reduce false positives by refining detection rules and thresholds",
+    "Low recall (0.00%): Improve attack detection coverage to catch more threats",
+    "Low classification accuracy (0.00%): Improve attack type identification",
+    "Consider implementing hybrid detection (rule-based + ML) for better balance of precision and recall"
+  ]
+}

@@ -1,0 +1,287 @@
+[
+  {
+    "event_id": "evt_001",
+    "timestamp": "2024-12-25T10:00:00",
+    "source_ip": "192.168.1.100",
+    "destination_ip": "10.0.0.5",
+    "source_port": 54321,
+    "destination_port": 22,
+    "protocol": "TCP",
+    "event_type": "FAILED_SSH_LOGIN",
+    "attack_type": "BruteForce",
+    "label": "SSH-Patator",
+    "is_malicious": true,
+    "flow_stats": {
+      "duration": 1000,
+      "fwd_packets": 5,
+      "bwd_packets": 2,
+      "bytes_per_sec": 500
+    }
+  },
+  {
+    "event_id": "evt_002",
+    "timestamp": "2024-12-25T10:00:05",
+    "source_ip": "192.168.1.100",
+    "destination_ip": "10.0.0.5",
+    "source_port": 54322,
+    "destination_port": 22,
+    "protocol": "TCP",
+    "event_type": "FAILED_SSH_LOGIN",
+    "attack_type": "BruteForce",
+    "label": "SSH-Patator",
+    "is_malicious": true,
+    "flow_stats": {
+      "duration": 1000,
+      "fwd_packets": 5,
+      "bwd_packets": 2,
+      "bytes_per_sec": 500
+    }
+  },
+  {
+    "event_id": "evt_003",
+    "timestamp": "2024-12-25T10:01:00",
+    "source_ip": "203.0.113.5",
+    "destination_ip": "10.0.0.10",
+    "source_port": 80,
+    "destination_port": 3306,
+    "protocol": "TCP",
+    "event_type": "MALICIOUS_REQUEST",
+    "attack_type": "SQLInjection",
+    "label": "Web Attack \u2013 Sql Injection",
+    "is_malicious": true,
+    "flow_stats": {
+      "duration": 500,
+      "fwd_packets": 3,
+      "bwd_packets": 1,
+      "bytes_per_sec": 1500
+    }
+  },
+  {
+    "event_id": "evt_004",
+    "timestamp": "2024-12-25T10:02:00",
+    "source_ip": "198.51.100.50",
+    "destination_ip": "10.0.0.20",
+    "source_port": 12345,
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "EXCESSIVE_REQUESTS",
+    "attack_type": "DDoS",
+    "label": "DDoS",
+    "is_malicious": true,
+    "flow_stats": {
+      "duration": 100,
+      "fwd_packets": 1000,
+      "bwd_packets": 0,
+      "bytes_per_sec": 50000
+    }
+  },
+  {
+    "event_id": "evt_005",
+    "timestamp": "2024-12-25T10:03:00",
+    "source_ip": "198.51.100.50",
+    "destination_ip": "10.0.0.20",
+    "source_port": 12346,
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "EXCESSIVE_REQUESTS",
+    "attack_type": "DDoS",
+    "label": "DDoS",
+    "is_malicious": true,
+    "flow_stats": {
+      "duration": 100,
+      "fwd_packets": 1000,
+      "bwd_packets": 0,
+      "bytes_per_sec": 50000
+    }
+  },
+  {
+    "event_id": "evt_benign_0",
+    "timestamp": "2024-12-25T09:00:00",
+    "source_ip": "10.0.1.1",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50000,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  },
+  {
+    "event_id": "evt_benign_1",
+    "timestamp": "2024-12-25T09:01:00",
+    "source_ip": "10.0.1.2",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50001,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  },
+  {
+    "event_id": "evt_benign_2",
+    "timestamp": "2024-12-25T09:02:00",
+    "source_ip": "10.0.1.3",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50002,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  },
+  {
+    "event_id": "evt_benign_3",
+    "timestamp": "2024-12-25T09:03:00",
+    "source_ip": "10.0.1.4",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50003,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  },
+  {
+    "event_id": "evt_benign_4",
+    "timestamp": "2024-12-25T09:04:00",
+    "source_ip": "10.0.1.5",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50004,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  },
+  {
+    "event_id": "evt_benign_5",
+    "timestamp": "2024-12-25T09:05:00",
+    "source_ip": "10.0.1.6",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50005,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  },
+  {
+    "event_id": "evt_benign_6",
+    "timestamp": "2024-12-25T09:06:00",
+    "source_ip": "10.0.1.7",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50006,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  },
+  {
+    "event_id": "evt_benign_7",
+    "timestamp": "2024-12-25T09:07:00",
+    "source_ip": "10.0.1.8",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50007,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  },
+  {
+    "event_id": "evt_benign_8",
+    "timestamp": "2024-12-25T09:08:00",
+    "source_ip": "10.0.1.9",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50008,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  },
+  {
+    "event_id": "evt_benign_9",
+    "timestamp": "2024-12-25T09:09:00",
+    "source_ip": "10.0.1.10",
+    "destination_ip": "10.0.0.1",
+    "source_port": 50009,
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "NORMAL_TRAFFIC",
+    "attack_type": "Normal",
+    "label": "BENIGN",
+    "is_malicious": false,
+    "flow_stats": {
+      "duration": 5000,
+      "fwd_packets": 10,
+      "bwd_packets": 10,
+      "bytes_per_sec": 1000
+    }
+  }
+]
