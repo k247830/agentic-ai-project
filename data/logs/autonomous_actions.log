@@ -1,0 +1,58 @@
+2025-12-28 22:35:07,619 - autonomous_executor - INFO - ActionExecutor initialized in simulation mode
+2025-12-28 22:39:53,531 - autonomous_executor - INFO - ActionExecutor initialized in supervised mode
+2025-12-28 22:51:06,439 - autonomous_executor - INFO - ActionExecutor initialized in simulation mode
+2025-12-28 22:51:06,442 - autonomous_executor - INFO - Executing response plan: INC-20251228-225106
+2025-12-28 22:51:06,442 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-28 22:51:06,442 - autonomous_executor - INFO - [SIMULATION] Would execute: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-28 22:51:06,442 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251228-225106.json
+2025-12-28 22:51:38,722 - autonomous_executor - INFO - ActionExecutor initialized in simulation mode
+2025-12-28 22:51:46,225 - autonomous_executor - INFO - Executing response plan: INC-20251228-225146
+2025-12-28 22:51:46,225 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-28 22:51:46,225 - autonomous_executor - INFO - [SIMULATION] Would execute: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-28 22:51:46,227 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251228-225146.json
+2025-12-28 22:52:54,131 - autonomous_executor - INFO - ActionExecutor initialized in simulation mode
+2025-12-28 22:52:57,755 - autonomous_executor - INFO - Executing response plan: INC-20251228-225257
+2025-12-28 22:52:57,755 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-28 22:52:57,755 - autonomous_executor - INFO - [SIMULATION] Would execute: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-28 22:52:57,756 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251228-225257.json
+2025-12-30 04:49:06,742 - autonomous_executor - INFO - ActionExecutor initialized in supervised mode
+2025-12-31 18:46:53,812 - autonomous_executor - INFO - ActionExecutor initialized in simulation mode
+2025-12-31 18:46:53,816 - autonomous_executor - INFO - Executing response plan: INC-20251231-184653
+2025-12-31 18:46:53,816 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-31 18:46:53,816 - autonomous_executor - INFO - [SIMULATION] Would execute: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-31 18:46:53,816 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251231-184653.json
+2025-12-31 18:47:17,772 - autonomous_executor - INFO - ActionExecutor initialized in dry_run mode
+2025-12-31 18:47:17,776 - autonomous_executor - INFO - Executing response plan: INC-20251231-184717
+2025-12-31 18:47:17,777 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-31 18:47:17,777 - autonomous_executor - INFO - [DRY RUN] Validating: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-31 18:47:17,777 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251231-184717.json
+2025-12-31 18:49:16,471 - autonomous_executor - INFO - ActionExecutor initialized in simulation mode
+2025-12-31 18:49:16,475 - autonomous_executor - INFO - Executing response plan: INC-20251231-184916
+2025-12-31 18:49:16,475 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-31 18:49:16,476 - autonomous_executor - INFO - [SIMULATION] Would execute: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-31 18:49:16,476 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251231-184916.json
+2025-12-31 18:49:19,893 - autonomous_executor - INFO - ActionExecutor initialized in dry_run mode
+2025-12-31 18:49:19,897 - autonomous_executor - INFO - Executing response plan: INC-20251231-184919
+2025-12-31 18:49:19,897 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-31 18:49:19,898 - autonomous_executor - INFO - [DRY RUN] Validating: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-31 18:49:19,898 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251231-184919.json
+2025-12-31 19:16:28,681 - autonomous_executor - INFO - ActionExecutor initialized in simulation mode
+2025-12-31 19:16:28,686 - autonomous_executor - INFO - Executing response plan: INC-20251231-191628
+2025-12-31 19:16:28,686 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-31 19:16:28,686 - autonomous_executor - INFO - [SIMULATION] Would execute: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-31 19:16:28,686 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251231-191628.json
+2025-12-31 19:16:34,297 - autonomous_executor - INFO - ActionExecutor initialized in dry_run mode
+2025-12-31 19:16:34,301 - autonomous_executor - INFO - Executing response plan: INC-20251231-191634
+2025-12-31 19:16:34,302 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-31 19:16:34,302 - autonomous_executor - INFO - [DRY RUN] Validating: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-31 19:16:34,302 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251231-191634.json
+2025-12-31 19:19:12,333 - autonomous_executor - INFO - ActionExecutor initialized in simulation mode
+2025-12-31 19:19:12,342 - autonomous_executor - INFO - Executing response plan: INC-20251231-191912
+2025-12-31 19:19:12,342 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-31 19:19:12,343 - autonomous_executor - INFO - [SIMULATION] Would execute: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-31 19:19:12,343 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251231-191912.json
+2025-12-31 19:19:19,002 - autonomous_executor - INFO - ActionExecutor initialized in dry_run mode
+2025-12-31 19:19:19,006 - autonomous_executor - INFO - Executing response plan: INC-20251231-191919
+2025-12-31 19:19:19,007 - autonomous_executor - INFO - Attempting to execute: enable_rate_limiting on ssh_service
+2025-12-31 19:19:19,007 - autonomous_executor - INFO - [DRY RUN] Validating: {'action_type': 'enable_rate_limiting', 'target': 'ssh_service', 'confidence': 0.95, 'reason': 'Prevention for DDoS'}
+2025-12-31 19:19:19,007 - autonomous_executor - INFO - Execution log saved: C:/cyber_agentic_ai/data/logs/execution_INC-20251231-191919.json

@@ -1,5 +1,61 @@
 {
-  "attack_detected": false,
-  "message": "No malicious activity detected",
-  "total_events": 5
+  "attack_detected": true,
+  "total_attacks": 1,
+  "attack_chains": [
+    {
+      "attack_type": "DDoS",
+      "mitre_technique": "T1498",
+      "mitre_tactic": "Impact",
+      "technique_name": "Network Denial of Service",
+      "timeline": [
+        {
+          "timestamp": "2025-12-28T22:50:45.955945",
+          "event": "Attack initiated",
+          "details": "First DDoS activity detected"
+        },
+        {
+          "timestamp": "2025-12-28T22:50:46.001497",
+          "event": "Attack escalation",
+          "details": "Continued malicious activity (600 total events)"
+        },
+        {
+          "timestamp": "2025-12-28T22:50:46.044435",
+          "event": "Last observed activity",
+          "details": "Final DDoS event recorded"
+        }
+      ],
+      "iocs": {
+        "malicious_ips": [
+          "172.16.0.1"
+        ],
+        "targeted_ips": [
+          "192.168.10.50"
+        ],
+        "targeted_ports": [
+          80
+        ],
+        "protocol_distribution": {
+          "6": 600
+        }
+      },
+      "confidence": 0.95,
+      "severity_score": 10,
+      "severity_level": "Critical",
+      "pattern": {
+        "name": "DDoS",
+        "characteristics": [
+          "High request volume: 600 requests",
+          "Attack sources: 1 IPs",
+          "Single-source DoS"
+        ]
+      },
+      "evidence": [
+        "Detected 600 malicious events classified as DDoS",
+        "Abnormally high request rate detected",
+        "Service availability likely impacted"
+      ],
+      "event_count": 600
+    }
+  ],
+  "analysis_timestamp": "2025-12-31T19:19:19.003498"
 }

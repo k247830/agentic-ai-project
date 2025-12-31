@@ -1,55 +1,71 @@
 {
   "impact_detected": true,
-  "overall_severity": "Medium",
+  "overall_severity": "Critical",
   "total_affected_assets": 1,
   "affected_asset_summary": [
     {
-      "type": "unknown",
-      "name": "Unknown System",
-      "criticality": 5,
+      "type": "web",
+      "name": "Web Server",
+      "criticality": 8,
       "targeted_ips": [
-        "unknown"
+        "192.168.10.50"
       ]
     }
   ],
-  "compliance_violations": [],
+  "compliance_violations": [
+    {
+      "framework": "ISO 27001",
+      "risk": "Availability breach",
+      "potential_fine": "Certification loss",
+      "notification_required": false,
+      "deadline_hours": null
+    }
+  ],
   "requires_notification": false,
-  "critical_actions_required": 0,
-  "total_estimated_loss_usd": 20000,
+  "critical_actions_required": 1,
+  "total_estimated_loss_usd": 562000,
   "individual_impacts": [
     {
-      "attack_type": "Normal",
-      "severity": "Medium",
+      "attack_type": "DDoS",
+      "severity": "Critical",
       "affected_assets": [
         {
-          "type": "unknown",
-          "name": "Unknown System",
-          "criticality": 5,
+          "type": "web",
+          "name": "Web Server",
+          "criticality": 8,
           "targeted_ips": [
-            "unknown"
+            "192.168.10.50"
           ]
         }
       ],
-      "downtime_hours": 2.0,
-      "estimated_loss_usd": 20000,
+      "downtime_hours": 13.8,
+      "estimated_loss_usd": 562000,
       "data_risk": {
         "confidentiality": "Low",
         "integrity": "Low",
-        "availability": "Low",
-        "data_at_risk": "None",
-        "risk_level": "Low"
+        "availability": "Critical",
+        "data_at_risk": "Service availability",
+        "risk_level": "Critical"
       },
-      "compliance_risks": [],
+      "compliance_risks": [
+        {
+          "framework": "ISO 27001",
+          "risk": "Availability breach",
+          "potential_fine": "Certification loss",
+          "notification_required": false,
+          "deadline_hours": null
+        }
+      ],
       "reputation_impact": {
-        "impact_score": 4,
-        "impact_level": "Low",
-        "public_visibility": "Low",
-        "customer_impact": "Indirect",
-        "media_risk": "Low"
+        "impact_score": 8,
+        "impact_level": "Significant",
+        "public_visibility": "High",
+        "customer_impact": "Direct",
+        "media_risk": "High"
       },
       "recovery_estimate": {
-        "immediate_containment_hours": 4,
-        "full_recovery_days": 1,
+        "immediate_containment_hours": 24,
+        "full_recovery_days": 7,
         "phases": [
           "Immediate containment and isolation",
           "Threat eradication and system hardening",
@@ -57,8 +73,8 @@
           "Post-incident review and improvements"
         ]
       },
-      "business_impact_score": 3
+      "business_impact_score": 8
     }
   ],
-  "analysis_timestamp": "2025-12-25T23:26:11.962612"
+  "analysis_timestamp": "2025-12-31T19:19:19.004695"
 }

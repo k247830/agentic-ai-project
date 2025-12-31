@@ -1,0 +1,21 @@
+{
+  "incident_id": "INC-20251231-191634",
+  "execution_mode": "dry_run",
+  "started_at": "2025-12-31T19:16:34.301984",
+  "actions_executed": [
+    {
+      "action": "enable_rate_limiting",
+      "target": "ssh_service",
+      "status": "success",
+      "mode": "dry_run",
+      "validations": [
+        "Would validate command syntax",
+        "Would check connectivity"
+      ]
+    }
+  ],
+  "actions_failed": [],
+  "actions_blocked": [],
+  "completed_at": "2025-12-31T19:16:34.302170",
+  "success_rate": 0.25
+}

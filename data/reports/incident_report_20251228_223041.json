@@ -1,0 +1,12 @@
+{
+  "report_id": "RPT-20251228-223041",
+  "generated_at": "2025-12-28T22:30:41.472842",
+  "status": "No Incidents Detected",
+  "executive_summary": "Security analysis completed. No malicious activity detected.",
+  "analysis_metadata": {
+    "total_events_analyzed": 1000,
+    "malicious_events": 0,
+    "benign_events": 1000,
+    "analysis_complete": true
+  }
+}

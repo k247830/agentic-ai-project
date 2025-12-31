@@ -161,7 +161,7 @@ def main():
 
 
     # Adjust paths according to your dataset location
-    input_csv = r"C:\cyber_agentic_ai\data\raw\cybersecurity_attacks.csv"
+    input_csv = r"C:\cyber_agentic_ai\data\raw\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv"
     output_json = r"C:\cyber_agentic_ai\data\processed\normalized_events.json"
 
     # Process with sampling (remove sample_size for full dataset)

@@ -1,0 +1,19 @@
+{
+  "incident_id": "INC-20251231-191912",
+  "execution_mode": "simulation",
+  "started_at": "2025-12-31T19:19:12.342937",
+  "actions_executed": [
+    {
+      "action": "enable_rate_limiting",
+      "target": "ssh_service",
+      "status": "success",
+      "mode": "simulation",
+      "message": "Action simulated successfully",
+      "timestamp": "2025-12-31T19:19:12.343073"
+    }
+  ],
+  "actions_failed": [],
+  "actions_blocked": [],
+  "completed_at": "2025-12-31T19:19:12.343080",
+  "success_rate": 0.25
+}

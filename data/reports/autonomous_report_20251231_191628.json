@@ -1,0 +1,241 @@
+{
+  "report_id": "RPT-20251231-191628",
+  "incident_id": "INC-20251231-191628",
+  "generated_at": "2025-12-31T19:16:28.685714",
+  "executive_summary": "INCIDENT SUMMARY\n\nSeverity: Critical\nEstimated Financial Impact: $562,000 USD\n\nOur systems have detected 1 distinct attack pattern(s), including DDoS. This is a critical-severity incident requiring immediate action. \n\nRECOMMENDED ACTIONS:\n1. Immediate containment measures have been identified\n2. Eradication steps to remove threats from the environment\n3. Recovery procedures to restore normal operations\n4. Long-term prevention measures to avoid recurrence\n\nEstimated total response time: 13 hours.\nRecommended team size: 6 personnel.",
+  "severity_assessment": {
+    "overall_severity": "Critical",
+    "severity_justification": "Severity rated as Critical based on: significant financial impact ($562,000)."
+  },
+  "attack_intelligence": {
+    "total_attacks_detected": 1,
+    "attack_breakdown": [
+      {
+        "attack_type": "DDoS",
+        "mitre_technique": "T1498",
+        "mitre_tactic": "Impact",
+        "technique_name": "Network Denial of Service",
+        "timeline": [
+          {
+            "timestamp": "2025-12-28T22:50:45.955945",
+            "event": "Attack initiated",
+            "details": "First DDoS activity detected"
+          },
+          {
+            "timestamp": "2025-12-28T22:50:46.001497",
+            "event": "Attack escalation",
+            "details": "Continued malicious activity (600 total events)"
+          },
+          {
+            "timestamp": "2025-12-28T22:50:46.044435",
+            "event": "Last observed activity",
+            "details": "Final DDoS event recorded"
+          }
+        ],
+        "iocs": {
+          "malicious_ips": [
+            "172.16.0.1"
+          ],
+          "targeted_ips": [
+            "192.168.10.50"
+          ],
+          "targeted_ports": [
+            80
+          ],
+          "protocol_distribution": {
+            "6": 600
+          }
+        },
+        "confidence": 0.95,
+        "severity_score": 10,
+        "severity_level": "Critical",
+        "pattern": {
+          "name": "DDoS",
+          "characteristics": [
+            "High request volume: 600 requests",
+            "Attack sources: 1 IPs",
+            "Single-source DoS"
+          ]
+        },
+        "evidence": [
+          "Detected 600 malicious events classified as DDoS",
+          "Abnormally high request rate detected",
+          "Service availability likely impacted"
+        ],
+        "event_count": 600
+      }
+    ]
+  },
+  "business_impact": {
+    "financial_impact_usd": 562000,
+    "affected_assets": 1,
+    "affected_asset_summary": [
+      {
+        "type": "web",
+        "name": "Web Server",
+        "criticality": 8,
+        "targeted_ips": [
+          "192.168.10.50"
+        ]
+      }
+    ],
+    "compliance_violations": [
+      {
+        "framework": "ISO 27001",
+        "risk": "Availability breach",
+        "potential_fine": "Certification loss",
+        "notification_required": false,
+        "deadline_hours": null
+      }
+    ],
+    "requires_notification": false
+  },
+  "incident_response": {
+    "immediate_actions": [
+      {
+        "action": "Enable DDoS mitigation service (CloudFlare, AWS Shield)",
+        "attack_type": "DDoS",
+        "phase": "Containment"
+      },
+      {
+        "action": "Implement rate limiting at edge network",
+        "attack_type": "DDoS",
+        "phase": "Containment"
+      },
+      {
+        "action": "Block malicious ASNs and IP ranges",
+        "attack_type": "DDoS",
+        "phase": "Containment"
+      },
+      {
+        "action": "Scale infrastructure to handle increased load",
+        "attack_type": "DDoS",
+        "phase": "Containment"
+      }
+    ],
+    "short_term_actions": [
+      {
+        "action": "Analyze traffic patterns to identify attack vectors",
+        "attack_type": "DDoS",
+        "phase": "Eradication"
+      },
+      {
+        "action": "Work with ISP to implement upstream filtering",
+        "attack_type": "DDoS",
+        "phase": "Eradication"
+      },
+      {
+        "action": "Identify and block botnet command servers",
+        "attack_type": "DDoS",
+        "phase": "Eradication"
+      },
+      {
+        "action": "Document attack characteristics for future defense",
+        "attack_type": "DDoS",
+        "phase": "Eradication"
+      },
+      {
+        "action": "Gradually restore normal traffic flow",
+        "attack_type": "DDoS",
+        "phase": "Recovery"
+      },
+      {
+        "action": "Monitor service availability metrics",
+        "attack_type": "DDoS",
+        "phase": "Recovery"
+      },
+      {
+        "action": "Restore CDN and caching configurations",
+        "attack_type": "DDoS",
+        "phase": "Recovery"
+      },
+      {
+        "action": "Communicate service status to stakeholders",
+        "attack_type": "DDoS",
+        "phase": "Recovery"
+      }
+    ],
+    "long_term_actions": [
+      {
+        "action": "Deploy always-on DDoS protection",
+        "attack_type": "DDoS",
+        "phase": "Prevention"
+      },
+      {
+        "action": "Implement geo-blocking if appropriate",
+        "attack_type": "DDoS",
+        "phase": "Prevention"
+      },
+      {
+        "action": "Set up auto-scaling infrastructure",
+        "attack_type": "DDoS",
+        "phase": "Prevention"
+      },
+      {
+        "action": "Create DDoS response runbook for future incidents",
+        "attack_type": "DDoS",
+        "phase": "Prevention"
+      }
+    ],
+    "estimated_response_time_hours": 13,
+    "recommended_team_size": 6,
+    "notification_requirements": [
+      {
+        "type": "Internal",
+        "recipient": "Executive Leadership",
+        "deadline_hours": 2,
+        "priority": "HIGH"
+      },
+      {
+        "type": "Internal",
+        "recipient": "Legal Department",
+        "deadline_hours": 4,
+        "priority": "HIGH"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": "CRITICAL",
+      "category": "Immediate Response",
+      "recommendation": "Activate incident response team immediately",
+      "rationale": "Severity level is Critical"
+    }
+  ],
+  "analysis_metadata": {
+    "total_events_analyzed": 1000,
+    "malicious_events": 600,
+    "benign_events": 400,
+    "analysis_start_time": "2025-12-31T19:16:28.681856",
+    "analysis_end_time": null,
+    "agents_used": [
+      "Attack Tracer",
+      "Impact Analyst",
+      "Incident Responder"
+    ],
+    "processing_time_seconds": 0.0
+  },
+  "autonomous_execution": {
+    "enabled": true,
+    "execution_mode": "simulation",
+    "execution_results": {
+      "incident_id": "INC-20251231-191628",
+      "execution_mode": "simulation",
+      "started_at": "2025-12-31T19:16:28.686135",
+      "actions_executed": [
+        {
+          "action": "enable_rate_limiting",
+          "target": "ssh_service",
+          "status": "success",
+          "mode": "simulation",
+          "message": "Action simulated successfully",
+          "timestamp": "2025-12-31T19:16:28.686293"
+        }
+      ],
+      "actions_failed": [],
+      "actions_blocked": [],
+      "completed_at": "2025-12-31T19:16:28.686301",
+      "success_rate": 0.25
+    }
+  }
+}

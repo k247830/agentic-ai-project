@@ -1,4 +1,167 @@
 {
-  "response_required": false,
-  "message": "No incident detected"
+  "response_required": true,
+  "incident_id": "INC-20251231-191919",
+  "severity": "Critical",
+  "executive_summary": "INCIDENT SUMMARY\n\nSeverity: Critical\nEstimated Financial Impact: $562,000 USD\n\nOur systems have detected 1 distinct attack pattern(s), including DDoS. This is a critical-severity incident requiring immediate action. \n\nRECOMMENDED ACTIONS:\n1. Immediate containment measures have been identified\n2. Eradication steps to remove threats from the environment\n3. Recovery procedures to restore normal operations\n4. Long-term prevention measures to avoid recurrence\n\nEstimated total response time: 13 hours.\nRecommended team size: 6 personnel.",
+  "immediate_actions": [
+    {
+      "action": "Enable DDoS mitigation service (CloudFlare, AWS Shield)",
+      "attack_type": "DDoS",
+      "phase": "Containment"
+    },
+    {
+      "action": "Implement rate limiting at edge network",
+      "attack_type": "DDoS",
+      "phase": "Containment"
+    },
+    {
+      "action": "Block malicious ASNs and IP ranges",
+      "attack_type": "DDoS",
+      "phase": "Containment"
+    },
+    {
+      "action": "Scale infrastructure to handle increased load",
+      "attack_type": "DDoS",
+      "phase": "Containment"
+    }
+  ],
+  "short_term_actions": [
+    {
+      "action": "Analyze traffic patterns to identify attack vectors",
+      "attack_type": "DDoS",
+      "phase": "Eradication"
+    },
+    {
+      "action": "Work with ISP to implement upstream filtering",
+      "attack_type": "DDoS",
+      "phase": "Eradication"
+    },
+    {
+      "action": "Identify and block botnet command servers",
+      "attack_type": "DDoS",
+      "phase": "Eradication"
+    },
+    {
+      "action": "Document attack characteristics for future defense",
+      "attack_type": "DDoS",
+      "phase": "Eradication"
+    },
+    {
+      "action": "Gradually restore normal traffic flow",
+      "attack_type": "DDoS",
+      "phase": "Recovery"
+    },
+    {
+      "action": "Monitor service availability metrics",
+      "attack_type": "DDoS",
+      "phase": "Recovery"
+    },
+    {
+      "action": "Restore CDN and caching configurations",
+      "attack_type": "DDoS",
+      "phase": "Recovery"
+    },
+    {
+      "action": "Communicate service status to stakeholders",
+      "attack_type": "DDoS",
+      "phase": "Recovery"
+    }
+  ],
+  "long_term_actions": [
+    {
+      "action": "Deploy always-on DDoS protection",
+      "attack_type": "DDoS",
+      "phase": "Prevention"
+    },
+    {
+      "action": "Implement geo-blocking if appropriate",
+      "attack_type": "DDoS",
+      "phase": "Prevention"
+    },
+    {
+      "action": "Set up auto-scaling infrastructure",
+      "attack_type": "DDoS",
+      "phase": "Prevention"
+    },
+    {
+      "action": "Create DDoS response runbook for future incidents",
+      "attack_type": "DDoS",
+      "phase": "Prevention"
+    }
+  ],
+  "detailed_response_plans": [
+    {
+      "attack_type": "DDoS",
+      "attack_severity": "Critical",
+      "mitre_technique": "T1498",
+      "containment": {
+        "priority": "IMMEDIATE",
+        "actions": [
+          "Enable DDoS mitigation service (CloudFlare, AWS Shield)",
+          "Implement rate limiting at edge network",
+          "Block malicious ASNs and IP ranges",
+          "Scale infrastructure to handle increased load"
+        ],
+        "estimated_time_hours": 1
+      },
+      "eradication": {
+        "priority": "HIGH",
+        "actions": [
+          "Analyze traffic patterns to identify attack vectors",
+          "Work with ISP to implement upstream filtering",
+          "Identify and block botnet command servers",
+          "Document attack characteristics for future defense"
+        ],
+        "estimated_time_hours": 4
+      },
+      "recovery": {
+        "priority": "MEDIUM",
+        "actions": [
+          "Gradually restore normal traffic flow",
+          "Monitor service availability metrics",
+          "Restore CDN and caching configurations",
+          "Communicate service status to stakeholders"
+        ],
+        "estimated_time_hours": 8
+      },
+      "prevention": {
+        "priority": "ONGOING",
+        "actions": [
+          "Deploy always-on DDoS protection",
+          "Implement geo-blocking if appropriate",
+          "Set up auto-scaling infrastructure",
+          "Create DDoS response runbook for future incidents"
+        ],
+        "estimated_time_hours": 40
+      },
+      "affected_assets": [
+        {
+          "type": "web",
+          "name": "Web Server",
+          "criticality": 8,
+          "targeted_ips": [
+            "192.168.10.50"
+          ]
+        }
+      ],
+      "estimated_cost_usd": 562000
+    }
+  ],
+  "estimated_total_response_time_hours": 13,
+  "recommended_team_size": 6,
+  "notification_requirements": [
+    {
+      "type": "Internal",
+      "recipient": "Executive Leadership",
+      "deadline_hours": 2,
+      "priority": "HIGH"
+    },
+    {
+      "type": "Internal",
+      "recipient": "Legal Department",
+      "deadline_hours": 4,
+      "priority": "HIGH"
+    }
+  ],
+  "generated_at": "2025-12-31T19:19:19.005626"
 }
